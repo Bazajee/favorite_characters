@@ -37,7 +37,7 @@ app.get('/', function (request, response) {
                                 text-align: center;
                                 z-index: 1; /* Pour s'assurer que le texte est devant l'image */
                             }
-                            div {
+                            .image {
 
                                 width: 100%; /* L'image prend toute la largeur de la page */
                                 height: 100%;
