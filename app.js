@@ -4,7 +4,23 @@ import express from 'express'
 const possibilities = [
     {value : "Dwight", gif_url : "dwight_crown.gif"},
     {value : "Jim", gif_url : "jim_hands.gif"},
-    {value : "Kevin", gif_url : "kevin_spit.gif"}
+    {value : "Kevin", gif_url : "kevin.gif"},
+    {value : "Michael", gif_url : "michael.gif"},
+    {value : "Gandalf", gif_url : "gandalf.gif"},
+    {value : "Gary", gif_url : "gary.gif"},
+    {value : "Avocato", gif_url : "avocato.gif"},
+    {value : "Hughie", gif_url : "hughie.gif"},
+    {value : "Aragorn", gif_url : "aragorn.gif"},
+    {value : "Boromir", gif_url : "boromir.gif"},
+    {value : "Barney", gif_url : "barney.gif"},
+    {value : "Lily", gif_url : "lily.gif"},
+    {value : "Sarah", gif_url : "sarah.gif"},
+    {value : "Nyles", gif_url : "nyles.webp"},
+    {value : "Cliff", gif_url : "cliff.webp"},
+    
+    
+
+    
 ]
 function get_random (list){
     return list[Math.floor(Math.random() * possibilities.length)]
@@ -46,6 +62,7 @@ app.get('/', function (request, response) {
                                 background-position : center;
                             }
                             </style>
+
                     </head>
                     <body>
                         <h1>${random.value}</h1>
